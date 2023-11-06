@@ -4,7 +4,6 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
 import static io.restassured.RestAssured.given;
 
 public class BaseTest {
@@ -30,6 +29,5 @@ public class BaseTest {
                 .statusCode(responseCode)
                 .extract().response();
         return response;
-
     }
 }
